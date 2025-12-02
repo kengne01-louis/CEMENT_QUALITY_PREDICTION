@@ -187,10 +187,7 @@ set_background(page)
 # Fonction pour charger le modèle
 def load_model():
     try:
-        try:
-            model = joblib.load('random_forest_model.joblib')
-        except:
-            model = pickle.load(open('random_forest_model.pkl', 'rb'))
+        model = joblib.load('random_forest_model.pkl','rb')
         return model
     except Exception as e:
         st.error(f"Erreur lors du chargement du modèle: {e}")
