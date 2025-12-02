@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import pickle
 import joblib
-import sklearn
 # from sklearn.ensemble import RandomForestRegressor
 from PIL import Image
 import matplotlib.pyplot as plt
